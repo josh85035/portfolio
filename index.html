@@ -1,46 +1,23 @@
 <!DOCTYPE html>
   <link href="style.css" rel="stylesheet" type="text/css" />
+  <script defer src="navigation.js"></script>
 
 <body>
 
   <!-- replicate ipod screen -->
   <div class="screen">
-    <h1>Now Playing...</h1>
-    <!-- display "song" -->
 
-    <div class="song-display">
-
-      <div class="album-art">
-        <img src="assets\square_PNG11.png" alt="Meteora Album Art">
-      </div>
-
-      <div class="song-info">
-        <p>My Portfolio</p>
-        <p>By</p>
-        <p>Josh Reyes</p> 
-      </div>
-      
-    </div>
-
+      <iframe id="ipod-screen" src="home.html"></iframe>
    
   </div>
 
   <!-- click wheel/navigation bar -->
   <div class="click-wheel">
 
-      <button class="button top">
-        <a href="contact.html">Contact</a>
-      </button>
-
-      <button class="button left">
-        <a href="about-me.html">About</a>
-      </button>
-      <button class="button right">
-        <a href="projects.html">Projects</a>
-      </button>
-      <button class="button bottom">
-        <a href="index.html">Home</a>
-      </button>
+      <button class="button top" onclick ="navigate('contact.html')">Contact</button>
+      <button class="button left" onclick="navigate('about-me.html')">About</button>
+      <button class="button right" onclick="navigate('projects.html')">projects</button>
+      <button class="button bottom" onclick="navigate('home.html')">home</button>
 
   </div>
 
