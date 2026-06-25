@@ -6,11 +6,9 @@
 
   <!-- replicate ipod screen -->
   <div class="screen">
-
-      <iframe id="ipod-screen" src="home.html"></iframe>
-   
+      <iframe id="ipod-screen" src="home.html" allowfullscreen></iframe>
   </div>
-
+  
   <!-- click wheel/navigation bar -->
   <div class="click-wheel">
 
@@ -18,6 +16,7 @@
       <button class="button left" onclick="navigate('about-me.html')">About</button>
       <button class="button right" onclick="navigate('projects.html')">projects</button>
       <button class="button bottom" onclick="navigate('home.html')">home</button>
+      <button class="center-btn" id="center-btn" onclick="toggleFullscreen()" aria-label="Toggle fullscreen"></button>
 
   </div>
 
