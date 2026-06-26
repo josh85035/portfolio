@@ -9,7 +9,6 @@ body {
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
 }
 
 .header-section{
@@ -48,22 +47,33 @@ body {
 
 .main-content{
  margin: 10%;
- padding:1px 16px;
+ padding:4px 16px;
  height:auto; 
  background-color: rgba(0, 0, 0, 0.6); 
  border-radius: 5%;
  box-shadow: 10px 10px 10px black;
-  color: white;
+ color: white;
 }
 
-.main-content p{
-  font-weight: bolder;
+.main-content p,
+.main-content a{
+  font-weight: bold;
   font-size: 20px;
   color: rgb(255, 255, 255);
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: rgb(0, 0, 0);
 }
 
+.main-contact p,
+.main-contact h1{
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+
+}
+
+.main-contact p {
+  font-size:20px;
+}
 
 .track{
   color:rgb(255, 255, 255);

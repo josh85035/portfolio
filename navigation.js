@@ -1,9 +1,11 @@
 //change the src for the ifram on the ipod screen
+let centerButton = document.querySelector(".center-btn");
+
 function navigate(page) {
     document.getElementById('ipod-screen').src = page;
 }
 
-function toggleFullscreen() {
+centerButton.addEventListener("click", function(){
   const iframe = document.getElementById('ipod-screen');
   const currentSrc = iframe.getAttribute('src');
 
@@ -12,4 +14,5 @@ function toggleFullscreen() {
   }
 
   window.location.href = currentSrc;
-}
+});
+
