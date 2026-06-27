@@ -55,6 +55,15 @@ body {
  color: white;
 }
 
+.main-contact{
+  padding: 4px 4px;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.6); 
+  border-radius: 5%;
+  box-shadow: 10px 10px 10px black;
+  color: white;
+}
+
 .main-content p,
 .main-content a{
   font-weight: bold;
@@ -68,11 +77,47 @@ body {
 .main-contact h1{
   font-weight: bold;
   color: rgb(255, 255, 255);
-
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgba(36, 36, 36, 0.216);
+  text-shadow: 0 0 12px black;
 }
 
 .main-contact p {
   font-size:20px;
+}
+
+.main-contact a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.projects-page{
+  flex-direction: column;
+  margin: 0;
+  padding: 2%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  text-shadow: 0 0 12px rgb(53, 51, 51);
+  font-size: 25px;
+  color: white;
+  font-weight: bolder;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgba(0, 0, 0, 0.427);
+  border-radius: 2%;
+}
+
+.change,
+.cyoa,
+.rps{
+  display: flex;
+  flex:1;
+  margin:3%;
+}
+
+.change p,
+.cyoa p {
+  margin-left: 3%;
 }
 
 .track{
