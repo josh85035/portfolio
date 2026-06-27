@@ -116,7 +116,8 @@ body {
 }
 
 .change p,
-.cyoa p {
+.cyoa p,
+.rps p {
   margin-left: 3%;
 }
 
