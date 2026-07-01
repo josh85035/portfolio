@@ -67,9 +67,9 @@ function applyTheme() {
   }
 
   if (githubImage && lightMode){
-  githubImage.src = "GitHub_Invertocat_Black.png"
+  githubImage.src = "../assets/GitHub_Invertocat_Black.png"
   } else if (githubImage && lightMode === false){
-  githubImage.src = "GitHub_Invertocat_White.png"
+  githubImage.src = "../assets/GitHub_Invertocat_White.png"
   }
 }
 
