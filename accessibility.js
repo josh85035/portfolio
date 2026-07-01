@@ -3,7 +3,7 @@ let lightModeButton = document.querySelector(".light-mode");
 let targetContent = document.querySelector(".main-content, .main-contact, .projects-page");
 
 //text increase vars
-let fontScales = [1, 1.15, 1.3, 1.5]; // 1 = normal size, no shrinking
+let fontScales = [1, 1.15, 1.3]; 
 let fontIndex = parseInt(localStorage.getItem("fontIndex")) || 0;
 let baseSizes = {p: 25, h1: 32, h6: 16}
 
