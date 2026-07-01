@@ -26,6 +26,11 @@ function applyTheme() {
       p.style.fontSize = (baseSizes.p * scale) + "px";
     });
 
+    targetContent.querySelectorAll("a").forEach(function (a) {
+      a.style.color = "black";
+      a.style.fontSize = (baseSizes.p * scale) + "px";
+    });
+
     targetContent.querySelectorAll("h1").forEach(function (h1) {
       h1.style.color = "black";
       h1.style.fontSize = (baseSizes.h1 * scale) + "px";
@@ -42,6 +47,11 @@ function applyTheme() {
     targetContent.querySelectorAll("p").forEach(function (p) {
       p.style.color = "white";
       p.style.fontSize = (baseSizes.p * scale) + "px";
+    });
+
+    targetContent.querySelectorAll("a").forEach(function (a) {
+      a.style.color = "white";
+      a.style.fontSize = (baseSizes.p * scale) + "px";
     });
 
     targetContent.querySelectorAll("h1").forEach(function (h1) {
