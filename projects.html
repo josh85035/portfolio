@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+    <script defer src="accessibility.js"></script>
     <link href="inside.css" rel="stylesheet" type="text/css" />    
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">  
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
@@ -9,13 +10,19 @@
         <title>Projects</title>
     </head>
     <body style="background-image:url('acid.PNG');">
-     
+        <!-- accessibility features -->
+        <div class="Accessibility-features">
+            <button class="light-mode" >☀</button>
+            <button class ="increase-font" onclick="cycleFontSize()">Aa</button>
+        </div>
+
+        <div class = "projects-page">  
             <div class="header-section">
                 <h6 class="track">Track 03 - Projects</h6>
                 <h1>Josh Reyes</h1>
-                <h3>Web developer</h3>
+                <h2>Works Hard</h2>
             </div>
-        <div class = "projects-page">  
+
             <p>Here are some of the projects I've worked on:</p>
             <div class="change">
                 <iframe src="https://josh85035.github.io/int-u2-project-starter-code-1/"></iframe>
@@ -35,7 +42,7 @@
     <ul>
         <li><a href="contact.html"><i class="ti ti-player-skip-back"></i><span>Contact</span></a></li>
         <li><a href="index.html"><i class="ti ti-player-play"></i></a></li>
-        <li><a href="about-me.html"><i class="ti ti-player-skip-forward"></i><span>About Me</span></a></li>
+        <li><a href="skills.html"><i class="ti ti-player-skip-forward"></i><span>Skills</span></a></li>
     </ul>
     </div>
     </body>

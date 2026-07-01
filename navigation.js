@@ -6,8 +6,8 @@ function navigate(page) {
 }
 
 centerButton.addEventListener("click", function(){
-  const iframe = document.getElementById('ipod-screen');
-  const currentSrc = iframe.getAttribute('src');
+  let iframe = document.getElementById('ipod-screen');
+  let currentSrc = iframe.getAttribute('src');
 
   if (currentSrc === 'home.html') {
     return;

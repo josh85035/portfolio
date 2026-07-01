@@ -19,9 +19,48 @@ body {
   line-height: 10%;
 }
 
-@media (max-width: 600px) {
+.Accessibility-features{
+  font-family: SF Pro Display, SF Pro Text, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  position: sticky;
+  top: 10px;
+  margin: 10px auto;
+  width: fit-content;
+  padding: 8px 16px;
+  border-radius: 20px;
+  background-color: rgba(245, 245, 245, 0.9);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  color: black;
+}
+
+.Accessibility-features button{
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  font-size: 15px;
+  font-weight: 600;
+  border: 1px solid #ccc;
+  background-color: white;
+  color: black;
+}
+
+.Accessibility-features button:hover{
+  background-color: #333;
+  color: white;
+}
+
+.Accessibility-features button.active{
+  background-color: #BDCFE9;
+  border-color: #BDCFE9;
+}
+
+@media (max-width: 850px) {
   .header-section h1,
-  .header-section h3,
+  .header-section h2,
   .header-section h6 {
     font-size: 12px;
     white-space: normal;
@@ -33,7 +72,28 @@ body {
   }
 }
 
-.header-section h3{
+@media (max-width: 600px) {
+  .main-content p,
+  .projects-page p,
+  .main-contact p{
+    font-size: 10px;
+    white-space: normal;
+    word-wrap: break-word;
+    max-width: 100%;
+    line-height: 1.4;
+    margin: 5px 0;
+    
+  }
+}
+
+.main-content img {
+  display: block;
+  margin: 0 auto;
+  max-width: 30%;
+  height: auto;
+}
+
+.header-section h2{
   background-color: #BDCFE9;
   border:solid #BDCFE9 .4ch;
   color: rgb(0, 0, 0);
@@ -47,44 +107,50 @@ body {
 
 .main-content{
  margin: 10%;
+ margin-top: 5%;
+ padding:4px 16px;
+ height:auto; 
+ background-color: rgba(0, 0, 0, 0.65); 
+ border-radius: 5%;
+ box-shadow: 10px 10px 10px black;
+ color: white;
+ font-family: SF Pro Display, SF Pro Text, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.main-contact .citation {
+  font-size: 12px;
+}
+
+.main-contact{
+ margin:10%;
+ margin-top: 5%;
  padding:4px 16px;
  height:auto; 
  background-color: rgba(0, 0, 0, 0.6); 
  border-radius: 5%;
  box-shadow: 10px 10px 10px black;
  color: white;
-}
-
-.main-contact{
-  padding: 4px 4px;
-  height: auto;
-  background-color: rgba(0, 0, 0, 0.6); 
-  border-radius: 5%;
-  box-shadow: 10px 10px 10px black;
-  color: white;
+ font-family: SF Pro Display, SF Pro Text, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 .main-content p,
-.main-content a{
+.main-content a,
+.main-contact p,
+.projects-page p{
   font-weight: bold;
-  font-size: 20px;
+  font-size: 25px;
   color: rgb(255, 255, 255);
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: rgb(0, 0, 0);
+  -webkit-text-stroke-color: rgb(0, 0, 0 ,0.5);
 }
 
-.main-contact p,
 .main-contact h1{
   font-weight: bold;
   color: rgb(255, 255, 255);
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: rgba(36, 36, 36, 0.216);
-  text-shadow: 0 0 12px black;
 }
 
-.main-contact p {
-  font-size:20px;
-}
 
 .main-contact a {
   display: flex;
@@ -92,33 +158,67 @@ body {
   align-items: center;
 }
 
+
 .projects-page{
   flex-direction: column;
-  margin: 0;
+  margin:7%;
+  margin-top: 2%;
   padding: 2%;
   background-color: rgba(0, 0, 0, 0.8);
   display: flex;
-  text-shadow: 0 0 12px rgb(53, 51, 51);
+  height: auto;
   font-size: 25px;
   color: white;
   font-weight: bolder;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: rgba(0, 0, 0, 0.427);
   border-radius: 2%;
+  font-family: SF Pro Display, SF Pro Text, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
+
 
 .change,
 .cyoa,
 .rps{
   display: flex;
-  flex:1;
-  margin:3%;
+  gap: 16px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin: 3%;
+}
+
+.change iframe,
+.cyoa iframe,
+.rps iframe {
+  width: min(100%, 420px);
+  height: 260px;
+  border: 0;
+  flex: 0 0 min(100%, 420px);
 }
 
 .change p,
 .cyoa p,
 .rps p {
+  flex: 1 1 280px;
+  min-width: 0;
   margin-left: 3%;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+@media (max-width: 700px) {
+  .change,
+  .cyoa,
+  .rps {
+    flex-direction: column;
+  }
+
+  .change iframe,
+  .cyoa iframe,
+  .rps iframe {
+    width: 100%;
+    max-width: 100%;
+    height: 220px;
+    flex-basis: 100%;
+  }
 }
 
 .track{
@@ -132,6 +232,7 @@ body {
   width: 100%;
   height: 7%;
   background-color: rgb(209, 209, 209);
+  font-family: SF Pro Display, SF Pro Text, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   color: rgb(0, 0, 0);
   text-align: center;
 }
@@ -157,6 +258,11 @@ body {
   font-weight: 500;
   padding: 4px 10px;
   border-radius: 8px;
+}
+
+.contactLinks{
+  display: flex;
+  justify-content: space-around;
 }
 
 p {

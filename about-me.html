@@ -1,43 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-      <link href="inside.css" rel="stylesheet" type="text/css" />
+        <link href="inside.css" rel="stylesheet" type="text/css" />
+        <script defer src="accessibility.js"></script>
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+
         <title>About Me</title>
     </head>
 
     <!-- Main content -->
-    <body style="background-image: url('IMG_0084.PNG'); background-position: center;">
+    <body style="background-image: url('02.png'); background-position: bottom;">
+
+        <div class="Accessibility-features">
+            <button class="light-mode" >☀</button>
+            <button class ="increase-font" onclick="cycleFontSize()">Aa</button>
+        </div>
+
         <div class="main-content" >
             <!--  navigation menu -->
             
             <div class = "header-section">
                 <h6 class="track">Track 01 - About Me</h6>
                 <h1>Josh Reyes</h1>
-                <h3>Web developer</h3>
+                <h2>Web Developer</h2>
             </div>
         
-            <h4>About me:</h4>
+            <h1>About me:</h1>
             <p>Hello! I'm Josh Reyes, a passionate web developer with a love for creating beautiful and functional websites.</p>
-            <p>With a background in both design and development, I strive to create user-friendly interfaces that provide an excellent user experience.</p>
-            
-            <h4>Hobbies</h4>
-            <ul>
-                <li>Music</li>
-                <li>Movies and TV</li>
-                <li>Art and drawing</li>
-                <li>Video Games</li>
-            </ul>
-
-
+            <p>I have an interest in software and hardware, and I plan to attend Rose-Hulman Institute of Technology to study Computer Engineering.</p>
+            <!-- <img src="rhit.jpg" alt = "Rose-Hulman Institue of Technology Logo"> -->
+            <h1>Work Experience:</h1>
+            <p>I've previously worked freelance landscaping, at McAllister's Deli, and as part of the Nextech Catapult Internship.</p>
+            <!-- <img src="mcallisters.png" alt = "McAllister's Deli Logo"> -->
         </div>
 
-                    <div class="nav-bar">
+            <div class="nav-bar">
                 <ul>
-                    <li><a href="projects.html"><i class="ti ti-player-skip-back"></i><span>Projects</span></a></li>
+                    <li><a href="skills.html"><i class="ti ti-player-skip-back"></i><span>Skills</span></a></li>
                     <li><a href="index.html"><i class="ti ti-player-play"></i></a></li>
                     <li><a href="contact.html"><i class="ti ti-player-skip-forward"></i><span>Contacts</span></a></li>
                 </ul>
