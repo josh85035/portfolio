@@ -1,7 +1,7 @@
 //light mode vars
 let lightModeButton = document.querySelector(".light-mode");
 let targetContent = document.querySelector(".main-content, .main-contact, .projects-page");
-
+let githubImage = document.querySelector(".github img");
 //text increase vars
 let fontScales = [1, 1.15, 1.3]; 
 let fontIndex = parseInt(localStorage.getItem("fontIndex")) || 0;
@@ -55,7 +55,15 @@ function applyTheme() {
     });
 
   }
+
+  if (githubImage && lightMode){
+  githubImage.src = "GitHub_Invertocat_Black.png"
+  } else if (githubImage && lightMode === false){
+  githubImage.src = "GitHub_Invertocat_White.png"
+  }
 }
+
+
 
 //apply lightmode toggle
 if (lightModeButton && targetContent) {
